@@ -16,7 +16,7 @@ const Hero = () => {
           </h2>
 
           <div className="hero-bottom bg-[#101b18] mx-[11vw] px-[3vw] py-[2vw] rounded-xl">
-            <p className="text-gray-300 mb-[20px] text-center text-[18px] font-Inter">
+            <p className="text-gray-300 mb-[20px] text-center text-[16px] font-Poppins">
               USDL (United States Deeds to Land) is a digital currency designed
               to offer stability and growth by backing its value with real
               estate. As the world transitions into an era of artificial general

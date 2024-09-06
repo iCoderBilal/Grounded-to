@@ -14,6 +14,20 @@
     backdrop-filter: blur(4px);
 }
 
+/* _______________________About____________________ */
+
+.about-heading{
+    background: #34D399;
+    background: linear-gradient(to right, #34D399 0%, #C0DC61 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+}
+
+/* .aboutImg{
+    box-shadow: 0px 100px 60px 0px #BDDC62;
+} */
+
 /* .hero-bottom{
     box-shadow: 0 -10px 30px -1px rgba(184, 220, 100, 0.4), 0 -2px 4px -1px rgba(161, 5, 5, 0.06);
 } */

@@ -17,7 +17,7 @@ const Secure = () => {
                   <dt className=" text-base leading-7 text-gray-200">
                     USDL is backed by real land
                   </dt>
-                  <dd className="font-Inter mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
+                  <dd className="font-Poppins mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
                     Stable Investment
                   </dd>
                 </div>
@@ -25,7 +25,7 @@ const Secure = () => {
                   <dt className="text-base leading-7 text-gray-200">
                     Land remains a valuable resources
                   </dt>
-                  <dd className="font-Inter mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
+                  <dd className="font-Poppins mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
                     Future-Proof Asset
                   </dd>
                 </div>
@@ -33,7 +33,7 @@ const Secure = () => {
                   <dt className="text-base leading-7 text-gray-200">
                     USDL tokens can be easily traded
                   </dt>
-                  <dd className="font-Inter mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
+                  <dd className="font-Poppins mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
                     High Liquidity
                   </dd>
                 </div>
