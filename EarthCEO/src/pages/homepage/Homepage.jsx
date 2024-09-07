@@ -3,7 +3,9 @@ import Hero from "./Components/Hero";
 import "./homepage.css";
 import Secure from "./Components/Secure";
 import About from "./Components/About";
-import CardSpotlight from "./Components/AnimatedCard";
+import HowItWorks from "./Components/HowItWorks";
+import { VelocityScroll } from "../../components/Scroll";
+import FinalCall from "./Components/FinalCall";
 
 const Homepage = () => {
   return (
@@ -11,7 +13,10 @@ const Homepage = () => {
       <Hero />
       <About />
       <Secure />
-      <CardSpotlight />
+      <HowItWorks />
+
+      <FinalCall />
+      {/* <VelocityScroll text="This is Something Great" /> */}
     </div>
   );
 };

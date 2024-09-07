@@ -16,13 +16,44 @@
 
 /* _______________________About____________________ */
 
-.about-heading{
+.section-heading{
     background: #34D399;
     background: linear-gradient(to right, #34D399 0%, #C0DC61 65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: white;
 }
+
+.aboutImg{
+    animation: mover 2s infinite;
+}
+
+@keyframes mover{
+    0% , 100%{
+        transform : translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+/* __________________________________Scroll-Section__________________________ */
+
+.scroll-section{
+    background: rgb(182,219,101);
+    background: linear-gradient(29deg, rgba(182,219,101,1) 0%, rgba(155,183,93,1) 2%, rgba(114,129,82,1) 8%, rgba(0,0,0,1) 22%);
+}
+
+
+/* ___________________________________Final-Call___________________________ */
+
+.final-call-container{
+    background: url('../../assets/forest-overall.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 /* .aboutImg{
     box-shadow: 0px 100px 60px 0px #BDDC62;

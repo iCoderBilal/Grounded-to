@@ -10,7 +10,7 @@ const Hero = () => {
 
       <div className="flex items-center justify-center w-screen h-[90vh]">
         <div className="hero-content">
-          <h2 className="tracking-tighter hero-heading leading-[10vw] text-center font-bold text-[9vw] font-Inter block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
+          <h2 className="tracking-tighter hero-heading leading-[10vw] text-center font-semibold text-[9vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
             Future With
             <p className="text-[12vw] blinking-text mb-[30px]">USDL</p>
           </h2>

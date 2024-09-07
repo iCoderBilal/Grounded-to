@@ -1,13 +1,13 @@
 import React from "react";
-import aboutImg from "../../../assets/aboutImg.png";
+import aboutImg from "../../../assets/land-3d-remover.png";
 
 const About = () => {
   return (
     <div>
       <div className="about-section w-[100%] bg-black px-[7vw] py-[7vw] pb-[4vw] pt-[7vw] flex gap-[5vw] items-center">
-        <img src={aboutImg} className="aboutImg" />
+        <img src={aboutImg} className="aboutImg w-[38vw] rounded-[30px]" />
         <div className="about-content">
-          <h2 className="about-heading tracking-tighter font-Inter text-[6vw] text-white font-semibold">
+          <h2 className="section-heading tracking-tighter font-Poppins text-[6vw] text-white font-semibold">
             What is USDL?
           </h2>
           <p className="text-gray-300 mb-[20px] text-left text-[18px] font-Poppins uppercase">
