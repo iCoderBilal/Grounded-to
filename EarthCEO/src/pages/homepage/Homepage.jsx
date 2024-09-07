@@ -6,6 +6,7 @@ import About from "./Components/About";
 import HowItWorks from "./Components/HowItWorks";
 import { VelocityScroll } from "../../components/Scroll";
 import FinalCall from "./Components/FinalCall";
+import Footer from "./Components/Footer";
 
 const Homepage = () => {
   return (
@@ -16,6 +17,7 @@ const Homepage = () => {
       <HowItWorks />
 
       <FinalCall />
+      <Footer />
       {/* <VelocityScroll text="This is Something Great" /> */}
     </div>
   );
