@@ -10,12 +10,14 @@ const Hero = () => {
 
       <div className="flex items-center justify-center w-screen h-[90vh]">
         <div className="hero-content">
-          <h2 className="tracking-tighter hero-heading leading-[10vw] text-center font-semibold text-[9vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
+          <h2 className="tracking-tighter hero-heading md:leading-[10vw] leading-[11.5vw] text-center font-semibold text-[11vw] md:text-[9vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
             Future With
-            <p className="text-[12vw] blinking-text mb-[30px]">USDL</p>
+            <p className="md:text-[12vw] text-[14vw] blinking-text mb-[30px]">
+              USDL
+            </p>
           </h2>
 
-          <div className="hero-bottom bg-[#101b18] mx-[11vw] px-[3vw] py-[2vw] rounded-xl">
+          <div className="hero-bottom bg-[#101b18] md:mx-[11vw] mx-[5vw]  md:px-[3vw] px-[5vw]  md:py-[2vw] py-[4vw] rounded-xl">
             <p className="text-gray-300 mb-[20px] text-center text-[16px] font-Poppins">
               USDL (United States Deeds to Land) is a digital currency designed
               to offer stability and growth by backing its value with real

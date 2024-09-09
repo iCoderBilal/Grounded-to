@@ -4,17 +4,17 @@ import SecureGlobe from "../../../assets/globe.png";
 const Secure = () => {
   return (
     <div>
-      <div className="bg-black pt-[7vw] pb-[24vw] secure text-white relative overflow-hidden">
-        <div className="absolute left-[12%] top-[15vw]">
-          <img src={SecureGlobe} alt="" className="w-[75vw]" />
+      <div className="bg-black md:pt-[7vw] pb-[24vw] secure text-white relative overflow-hidden md:h-[auto] h-[100vh]">
+        <div className="absolute md:left-[12%] left-[3%] top-[15vw]">
+          <img src={SecureGlobe} alt="" className="md:w-[75vw] w-[95vw]" />
         </div>
         {/* ________________________________Benefits_______________________________________________ */}
         <div className="flex justify-center">
-          <div className="py-24 sm:py-8 absolute bottom-[10px] rounded-[40px] secure-benefits">
+          <div className=" py-6 sm:py-8 absolute bottom-[10px] rounded-[40px] secure-benefits">
             <div className="mx-auto max-w-5xl px-6 lg:px-8">
               <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
                 <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                  <dt className=" text-base leading-7 text-gray-200">
+                  <dt className="md:text-base text-[16px] leading-7 text-gray-200">
                     USDL is backed by real land
                   </dt>
                   <dd className="font-Poppins mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
@@ -22,7 +22,7 @@ const Secure = () => {
                   </dd>
                 </div>
                 <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                  <dt className="text-base leading-7 text-gray-200">
+                  <dt className="md:text-base text-[16px] leading-7 text-gray-200">
                     Land remains a valuable resources
                   </dt>
                   <dd className="font-Poppins mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
@@ -30,7 +30,7 @@ const Secure = () => {
                   </dd>
                 </div>
                 <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                  <dt className="text-base leading-7 text-gray-200">
+                  <dt className="md:text-base text-[16px] leading-7 text-gray-200">
                     USDL tokens can be easily traded
                   </dt>
                   <dd className="font-Poppins mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">

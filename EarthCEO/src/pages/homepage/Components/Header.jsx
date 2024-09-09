@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
+
+  const handleClick = () => {
+    setMobileMenu(!mobileMenu);
+  };
+
   return (
     <div>
       <header>
@@ -20,6 +26,7 @@ const Header = () => {
               </a>
 
               <button
+                onClick={handleClick}
                 data-collapse-toggle="mobile-menu-2"
                 type="button"
                 className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -54,7 +61,9 @@ const Header = () => {
               </button>
             </div>
             <div
-              className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+              className={`  ${
+                mobileMenu ? "block" : "hidden"
+              } justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
               id="mobile-menu-2"
             >
               <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-1 lg:mt-0 ">

@@ -7,13 +7,16 @@ import HowItWorks from "./Components/HowItWorks";
 import { VelocityScroll } from "../../components/Scroll";
 import FinalCall from "./Components/FinalCall";
 import Footer from "./Components/Footer";
+import FramerMotion from "./Components/FramerMotion";
 
 const Homepage = () => {
   return (
     <div>
+      {/* <FramerMotion /> */}
       <Hero />
       <About />
       <Secure />
+
       <HowItWorks />
 
       <FinalCall />

@@ -5,19 +5,18 @@ import dollarImg from "../../../assets/dollar.png";
 import growthImg from "../../../assets/growth.png";
 
 const HowItWorks = () => {
-  const cards = [1, 2, 3];
   return (
     <div>
       <div className="how-works">
-        <div className="how-container px-[7vw] py-[7vw] bg-black text-white">
+        <div className="how-container px-6 py-[30vw] md:px-[7vw] md:py-[9vw] bg-black text-white">
           <div className="heading">
-            <h2 className="section-heading mb-[30px] tracking-tighter font-Poppins text-[6vw] text-white font-semibold">
+            <h2 className="section-heading mb-8 md:mb-[30px] tracking-tighter font-Poppins text-3xl md:text-[6vw] text-[9vw] text-white font-semibold md:leading-[6vw] leading-[9vw]">
               How USDL Works
             </h2>
           </div>
 
-          <div className="how-cards flex justify-between">
-            <div className="basis-[30%]">
+          <div className="how-cards flex flex-col md:flex-row justify-between gap-8 md:gap-0">
+            <div className="basis-full md:basis-[30%]">
               <CardSpotlight
                 cardImg={landImg}
                 cardHeading="Tokenization of Land"
@@ -25,7 +24,7 @@ const HowItWorks = () => {
               />
             </div>
 
-            <div className="basis-[30%]">
+            <div className="basis-full md:basis-[30%]">
               <CardSpotlight
                 cardImg={dollarImg}
                 cardHeading="Purchase USDL Tokens"
@@ -33,7 +32,7 @@ const HowItWorks = () => {
               />
             </div>
 
-            <div className="basis-[30%]">
+            <div className="basis-full md:basis-[30%]">
               <CardSpotlight
                 cardImg={growthImg}
                 cardHeading="Grow Your Investment"

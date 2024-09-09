@@ -55,7 +55,7 @@ const CardSpotlight = ({ cardImg, cardHeading, cardDescription }) => {
       <div className="card-img p-[12px] bg-black rounded-[50%] w-[fit-content]">
         <img src={cardImg} className="w-[60px]" />
       </div>
-      <h3 className="font-Poppins text-[1.8vw] text-white font-semibold mt-[10px]">
+      <h3 className="font-Poppins md:text-[1.8vw] text-[6vw] text-white font-semibold mt-[10px]">
         {" "}
         {cardHeading}
       </h3>
