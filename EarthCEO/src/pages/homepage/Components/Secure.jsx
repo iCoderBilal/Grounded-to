@@ -1,5 +1,6 @@
 import React from "react";
 import SecureGlobe from "../../../assets/globe.png";
+import { motion } from "framer-motion";
 
 const Secure = () => {
   return (
@@ -42,9 +43,18 @@ const Secure = () => {
           </div>
         </div>
         {/* ________________________________Benefits_______________________________________________ */}
-        <h2 className="tracking-tighter secure-heading leading-[10vw] text-center font-bold text-[11vw] font-Inter text-[#0E1414]">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [1, 0, 1] }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "reverses",
+          }}
+          className="tracking-tighter secure-heading leading-[10vw] text-center font-bold text-[11vw] font-Inter text-[#0E1414]"
+        >
           Secure Your Future
-        </h2>
+        </motion.h2>
         <div className="secure-container"></div>
       </div>
     </div>

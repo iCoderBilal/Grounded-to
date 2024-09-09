@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import land from "../../../assets/land.png";
+import { motion } from "framer-motion";
 
 const CardSpotlight = ({ cardImg, cardHeading, cardDescription }) => {
   const divRef = useRef(null);
@@ -36,7 +37,14 @@ const CardSpotlight = ({ cardImg, cardHeading, cardDescription }) => {
   };
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
       ref={divRef}
       onMouseMove={handleMouseMove}
       onFocus={handleFocus}
@@ -62,7 +70,7 @@ const CardSpotlight = ({ cardImg, cardHeading, cardDescription }) => {
       <p className="text-gray-300 mt-[14px] text-left text-[16px] font-Poppins">
         {cardDescription}
       </p>
-    </div>
+    </motion.div>
   );
 };
 

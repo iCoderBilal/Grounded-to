@@ -1,5 +1,6 @@
 import React from "react";
 import aboutImg from "../../../assets/land-3d-remover.png";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -10,9 +11,18 @@ const About = () => {
           className="aboutImg md:w-[38vw] w-[80vw] rounded-[30px] mx-auto"
         />
         <div className="about-content">
-          <h2 className="section-heading tracking-tighter font-Poppins md:text-[6vw] text-[9vw] text-white font-semibold">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1,
+            }}
+            className="section-heading tracking-tighter font-Poppins md:text-[6vw] text-[9vw] text-white font-semibold"
+          >
             What is USDL?
-          </h2>
+          </motion.h2>
           <p className="text-gray-300 mb-[20px] text-left text-[18px] font-Poppins uppercase">
             USDL (United States Deeds to Land) is a groundbreaking digital
             currency that is fully backed by real estate. In a world where

@@ -1,28 +1,33 @@
-import React from "react";
 import { motion } from "framer-motion";
 
-const FramerMotion = () => {
+const rippleVariants = {
+  hover: {
+    background: [
+      "linear-gradient(90deg, #34D399, #34D399)",
+      "linear-gradient(90deg, #34D399, #C0DC61)",
+      "linear-gradient(90deg, #C0DC61, #34D399)",
+    ],
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "mirror",
+    },
+  },
+};
+
+const AnimatedHeading = () => {
   return (
-    <div>
-      <div className="flex justify-center items-center h-[100vh] w-[100%]">
-        <motion.div
-          initial={{
-            rotate: 0,
-          }}
-          whileInView={{
-            rotate: 0,
-            y: [0, 100, -70, 0],
-          }}
-          transition={{
-            duration: 3,
-            ease: "easeOut",
-            times: [0.1, 0.8, 0.1, 1],
-          }}
-          className="framer-motion w-[400px] h-[400px] bg-pink-400"
-        ></motion.div>
-      </div>
-    </div>
+    <motion.h1
+      initial="hidden"
+      animate="visible"
+      whileHover="hover"
+      variants={rippleVariants}
+      className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-yellow-400"
+    >
+      Experience the Power of USDL
+    </motion.h1>
   );
 };
 
-export default FramerMotion;
+export default AnimatedHeading;
