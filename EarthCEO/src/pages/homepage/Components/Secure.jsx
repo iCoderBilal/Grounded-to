@@ -4,7 +4,7 @@ import SecureGlobe from "../../../assets/globe.png";
 const Secure = () => {
   return (
     <div>
-      <div className="bg-black md:pt-[7vw] pb-[24vw] secure text-white relative overflow-hidden md:h-[auto] h-[100vh]">
+      <div className="bg-black md:pt-[4vw] pb-[24vw] secure text-white relative overflow-hidden md:h-[auto] h-[100vh]">
         <div className="absolute md:left-[12%] left-[3%] top-[15vw]">
           <img src={SecureGlobe} alt="" className="md:w-[75vw] w-[95vw]" />
         </div>

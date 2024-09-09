@@ -10,9 +10,9 @@ const Hero = () => {
 
       <div className="flex items-center justify-center w-screen h-[90vh]">
         <div className="hero-content">
-          <h2 className="tracking-tighter hero-heading md:leading-[10vw] leading-[11.5vw] text-center font-semibold text-[11vw] md:text-[9vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
+          <h2 className="tracking-tighter hero-heading md:leading-[14vw] leading-[14vw] text-center font-semibold text-[14vw] md:text-[9vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
             Future With
-            <p className="md:text-[12vw] text-[14vw] blinking-text mb-[30px]">
+            <p className="md:text-[12vw] text-[17vw] blinking-text mb-[30px]">
               USDL
             </p>
           </h2>

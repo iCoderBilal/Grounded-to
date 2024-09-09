@@ -4,7 +4,7 @@ import aboutImg from "../../../assets/land-3d-remover.png";
 const About = () => {
   return (
     <div>
-      <div className="about-section w-[100%] bg-black md:px-[7vw] px-6 py-[7vw] pb-[4vw] pt-[7vw] flex md:flex-nowrap flex-wrap gap-[5vw] items-center">
+      <div className="about-section pb-[100px] w-[100%] bg-black md:px-[7vw] px-6 py-[7vw] md:pb-[4vw] pt-[7vw] flex md:flex-nowrap flex-wrap gap-[5vw] items-center">
         <img
           src={aboutImg}
           className="aboutImg md:w-[38vw] w-[80vw] rounded-[30px] mx-auto"
