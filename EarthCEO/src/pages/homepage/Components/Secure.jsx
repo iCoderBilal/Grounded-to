@@ -12,7 +12,7 @@ const Secure = () => {
         <div className="flex justify-center">
           <div className=" py-6 sm:py-8 absolute bottom-[10px] rounded-[40px] secure-benefits">
             <div className="mx-auto max-w-5xl px-6 lg:px-8">
-              <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+              <dl className="grid sm:grid-cols-3 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
                 <div className="mx-auto flex max-w-xs flex-col gap-y-4">
                   <dt className="md:text-base text-[16px] leading-7 text-gray-200">
                     USDL is backed by real land

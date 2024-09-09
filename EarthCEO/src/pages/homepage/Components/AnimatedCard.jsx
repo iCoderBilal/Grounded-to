@@ -43,7 +43,7 @@ const CardSpotlight = ({ cardImg, cardHeading, cardDescription }) => {
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="border-none relative h-[400px] w-[100%] flex flex-col justify-center overflow-hidden rounded border bg-[#101B18] px-8 py-12 shadow-2xl"
+      className="border-none relative min-h-[400px] w-[100%] flex flex-col justify-center overflow-hidden rounded border bg-[#101B18] px-8 py-12 shadow-2xl"
     >
       <div
         className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"

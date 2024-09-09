@@ -6,10 +6,10 @@ const FinalCall = () => {
     <div>
       <div className="finalCall w-[100%] bg-black relative pb-[8vw] pt-[2vw]">
         {/* <div className="w-full h-full absolute final-call-overlay z-[99] bg-[rgba(0,0,0,0.6)]"></div> */}
-        <div className="final-call-container mx-[7vw] h-[30vw] rounded-[20px] py-[2vw]">
+        <div className="final-call-container md:mx-[7vw] mx-6 md:h-[30vw] h-[70vh] rounded-[20px] py-[2vw] pb-6">
           <div className="final-call-content flex justify-center items-end h-[100%]">
             <div className="text-center z-[999]">
-              <h2 className="mb-[10px] tracking-normal font-Poppins text-[4.5vw] text-white font-semibold text-center leading-[6vw] z-[999]">
+              <h2 className="md:mb-[10px] mb-[20px] tracking-normal font-Poppins md:text-[4.5vw] text-[8vw] text-white font-semibold text-center md:leading-[6vw] leading-[8vw] z-[999]">
                 Secure Your Place in Tomorrow
               </h2>
               <a

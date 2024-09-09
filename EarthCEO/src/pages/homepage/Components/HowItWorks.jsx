@@ -16,7 +16,7 @@ const HowItWorks = () => {
           </div>
 
           <div className="how-cards flex flex-col md:flex-row justify-between gap-8 md:gap-0">
-            <div className="basis-full md:basis-[30%]">
+            <div className="basis-full sm:basis-[100%] md:basis-[30%]">
               <CardSpotlight
                 cardImg={landImg}
                 cardHeading="Tokenization of Land"
