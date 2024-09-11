@@ -9,13 +9,18 @@ import FinalCall from "./Components/FinalCall";
 import Footer from "./Components/Footer";
 import FramerMotion from "./Components/FramerMotion";
 import AnimatedHeading from "./Components/FramerMotion";
+import InteractiveMap from "./Components/InteractiveMap";
+import stateData from "./usStates.json"; // Ensure this path is correct based on your project structure
+import NewMap from "../exploreland/Components/NewMap";
 
 const Homepage = () => {
   return (
     <div>
       <Hero />
 
+      {/* <InteractiveMap stateData={stateData} /> */}
       <About />
+      {/* <NewMap /> */}
       <Secure />
 
       <HowItWorks />

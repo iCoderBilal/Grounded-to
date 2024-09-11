@@ -54,6 +54,12 @@
 }
 
 
+/* ____________________Leaflet___________________ */
+.leaflet-container{
+    height: 100vh;
+}
+
+
 
 /* .aboutImg{
     box-shadow: 0px 100px 60px 0px #BDDC62;
