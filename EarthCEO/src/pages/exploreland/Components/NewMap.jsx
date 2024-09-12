@@ -2,6 +2,7 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { motion } from "framer-motion";
+import customMarkerIcon from "../../../assets/map.png";
 
 // Array containing US states with their names, coordinates (latitude, longitude), and example price per acre.
 const usStates = [
@@ -77,6 +78,13 @@ const usStates = [
   },
 ];
 
+const customIcon = new L.Icon({
+  iconUrl: customMarkerIcon,
+  iconSize: [38, 38], // Adjust the size as needed
+  iconAnchor: [19, 38], // Anchor the icon to the exact location
+  popupAnchor: [0, -38], // Position the popup relative to the icon
+});
+
 const NewMap = () => {
   return (
     <>
@@ -95,7 +103,7 @@ const NewMap = () => {
       <div className="w-[100%] flex items-center justify-center rounded-[40px]">
         <MapContainer
           center={[37.8, -96]}
-          zoom={4}
+          zoom={5}
           scrollWheelZoom={true}
           className="sm:w-[84%] w-[90%] sm:h-[600px] h-[400px]"
           //   style={{ height: "600px", width: "84%" }}
@@ -105,7 +113,7 @@ const NewMap = () => {
             url="https://tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token=IXREMIsiyDRlNhKALYG46cojVYcNxQl6Wc5EkND8lsGNkd0z0ZrHGSj8GxmJtf6C"
           />
           {usStates.map((state, index) => (
-            <Marker key={index} position={state.geocode}>
+            <Marker key={index} position={state.geocode} icon={customIcon}>
               <Popup>
                 <h2 className="text-[20px] font-Poppins mb-[-10px]">
                   {state.name}
