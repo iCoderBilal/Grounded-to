@@ -88,7 +88,7 @@ const NewMap = () => {
         transition={{
           duration: 1,
         }}
-        className="section-heading tracking-tighter font-Poppins md:text-[6vw] text-[9vw] text-white font-semibold text-center sm:mb-[0px] mb-[10px]"
+        className="section-heading tracking-tighter font-Poppins md:text-[6vw] text-[9vw] text-white font-semibold text-center md:mt-[80px] mt-[50px]  sm:mb-[0px] mb-[10px]"
       >
         Explore The Land
       </motion.h2>

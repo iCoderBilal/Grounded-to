@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Homepage from "./pages/homepage/Homepage";
 import { useScroll, motion, useSpring, useTransform } from "framer-motion";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
+import ExploreLand from "./pages/exploreland/ExploreLand";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -31,7 +33,12 @@ function App() {
           zIndex: "99999",
         }}
       />
-      <Homepage />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/exploreland" element={<ExploreLand />} />
+        </Routes>
+      </Router>
     </>
   );
 }
