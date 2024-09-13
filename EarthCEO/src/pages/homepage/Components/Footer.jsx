@@ -6,13 +6,14 @@ import twitterIcon from "../../../assets/twitter.png";
 const Footer = () => {
   return (
     <>
-      <div className="footer bg-black">
+      <div className="footer bg-black relative z-10">
+        <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#A7DA6B_100%)]"></div>
         <div className="footer-container px-[7vw] pb-[3vw] md:pt-0 pt-[70px]">
-          <div className="flex md:flex-nowrap flex-wrap justify-between">
+          <div className="flex md:flex-nowrap flex-wrap justify-between ">
             <div className="footer-left md:basis-[55%] basis-[100%]">
               <div className="flex items-center md:flex-nowrap flex-wrap">
                 <h2 className="pr-[20px] md:basis-[30%] basis-[100%] font-Poppins md:text-[1.5vw] text-[8vw] text-[#B6DB64] font-semibold mt-[8px] md:text-left text-center">
-                  Grounded To
+                  Grounded
                 </h2>
                 <p className="text-gray-300 md:text-left text-center text-[16px] font-Poppins md:pl-[40px] md:border-l-2 border-white">
                   Join us in shaping the future of finance with secure, land

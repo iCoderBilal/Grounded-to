@@ -10,20 +10,20 @@ const Header = () => {
 
   return (
     <div>
-      <header>
-        <nav className="bg-[black] border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+      <header className="sticky top-[20px]">
+        <nav className="bg-[black] border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 pt-[12px]">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl border-b-[0.3px] border-[#1a1a1a] pb-4">
             <Link to="/">
               <a className="flex items-center">
                 <h2 className="mr-3 h-6 sm:h-9 text-white font-Poppins font-bold">
-                  GROUNDED TO
+                  GROUNDED
                 </h2>
               </a>
             </Link>
-            <div className="flex items-center lg:order-2">
+            <div className="lg:hidden flex items-center lg:order-2">
               <a
                 href="#"
-                className="bg-[#C0DC61] text-gray-700 font-Poppins hover:text-gray-300 dark:text-white hover:bg-[#1d1d1d] focus:ring-4 focus:ring-gray-300 font-medium rounded-[20px] text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 duration-300 ease-in-out transition"
+                className="hidden bg-[#C0DC61] text-gray-700 font-Poppins hover:text-gray-300 dark:text-white hover:bg-[#1d1d1d] focus:ring-4 focus:ring-gray-300 font-medium rounded-[20px] text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 duration-300 ease-in-out transition"
               >
                 Log in
               </a>

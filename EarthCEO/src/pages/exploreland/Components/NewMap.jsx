@@ -100,7 +100,7 @@ const NewMap = () => {
       >
         Explore The Land
       </motion.h2>
-      <div className="w-[100%] flex items-center justify-center rounded-[40px]">
+      <div className="w-[100%] flex items-center justify-center rounded-[40px] mb-[100px]">
         <MapContainer
           center={[37.8, -96]}
           zoom={5}

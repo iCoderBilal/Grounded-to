@@ -12,10 +12,13 @@ import AnimatedHeading from "./Components/FramerMotion";
 import InteractiveMap from "./Components/InteractiveMap";
 import stateData from "./usStates.json"; // Ensure this path is correct based on your project structure
 import NewMap from "../exploreland/Components/NewMap";
+import FAQ from "./Components/FAQ";
+import { Spotlight } from "../../components/Spotlight";
 
 const Homepage = () => {
   return (
     <div>
+      <Spotlight />
       <Hero />
 
       {/* <InteractiveMap stateData={stateData} /> */}
@@ -24,7 +27,7 @@ const Homepage = () => {
       <Secure />
 
       <HowItWorks />
-
+      <FAQ />
       <FinalCall />
       <Footer />
       {/* <VelocityScroll text="This is Something Great" /> */}
