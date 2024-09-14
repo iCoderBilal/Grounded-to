@@ -20,7 +20,7 @@ const HowItWorks = () => {
               <CardSpotlight
                 cardImg={landImg}
                 cardHeading="Tokenization of Land"
-                cardDescription="USDL transforms real-world land into digital tokens. Each USDL token represents fractional ownership of a specific parcel of land, providing a tangible and stable backing for the digital currency."
+                cardDescription="USDL transforms real-world land into digital tokens, representing fractional ownership of a specific parcel. Each USDL token is backed by actual land, making it a secure and tangible investment."
               />
             </div>
 
@@ -28,7 +28,7 @@ const HowItWorks = () => {
               <CardSpotlight
                 cardImg={dollarImg}
                 cardHeading="Purchase USDL Tokens"
-                cardDescription="Investors can easily buy USDL tokens through our platform. These tokens allow you to own a share of valuable real estate without the complexities of traditional land investment."
+                cardDescription="Investors can easily purchase USDL tokens through our platform. These tokens allow you to own a share of valuable real estate without the complexities of traditional land investment."
               />
             </div>
 
@@ -36,7 +36,7 @@ const HowItWorks = () => {
               <CardSpotlight
                 cardImg={growthImg}
                 cardHeading="Grow Your Investment"
-                cardDescription="As land appreciates over time, so does the value of your USDL tokens. Enjoy a secure and future-proof investment backed by one of the most stable assets—land."
+                cardDescription="As land appreciates over time, so does the value of your USDL tokens. Enjoy the benefits of a stable, land-backed currency designed to withstand market volatility and the evolving technological landscape."
               />
             </div>
           </div>

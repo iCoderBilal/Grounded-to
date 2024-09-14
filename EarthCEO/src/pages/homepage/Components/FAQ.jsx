@@ -44,10 +44,8 @@ const FAQ = () => {
                   </div>
                 </summary>
                 <div className="px-6 pb-6 text-secondary-500 font-Poppins text-gray-300">
-                  Land is one of the most stable assets available—it’s finite
-                  and cannot be replicated. By anchoring our tokens to real
-                  land, we offer a currency that’s resistant to inflation and
-                  market volatility, making USDL a future-proof investment.
+                  Land is one of the few truly scarce resources, making it an
+                  ideal asset to back a stable and secure currency.
                 </div>
               </details>
 
@@ -72,11 +70,9 @@ const FAQ = () => {
                   </div>
                 </summary>
                 <div className="px-6 pb-6 text-secondary-500 font-Poppins text-gray-300">
-                  As the value of land increases, so does the value of your USDL
-                  tokens. By holding onto your tokens or trading them on our
-                  marketplace, you can enjoy the benefits of land ownership
-                  without the complexities of traditional real estate
-                  investment.
+                  As the value of land increases over time, so does the value of
+                  your USDL tokens, providing you with a stable and appreciating
+                  asset.
                 </div>
               </details>
             </div>
@@ -108,9 +104,8 @@ const FAQ = () => {
                   </div>
                 </summary>
                 <div className="px-6 pb-6 text-secondary-500 font-Poppins text-gray-300">
-                  Yes! USDL tokens are highly liquid and can be transferred
-                  between users or traded on our platform, allowing for easy
-                  exchange and investment flexibility.
+                  Yes, USDL tokens can be easily transferred, allowing you to
+                  trade your land-backed investment.
                 </div>
               </details>
 
@@ -135,11 +130,9 @@ const FAQ = () => {
                   </div>
                 </summary>
                 <div className="px-6 pb-6 text-secondary-500 font-Poppins text-gray-300">
-                  While land is generally considered a stable and appreciating
-                  asset, its value can fluctuate. However, because USDL tokens
-                  are diversified across various parcels, they are less
-                  susceptible to the volatility that might affect a single
-                  property.
+                  While land has historically appreciated in value, USDL is
+                  designed to offer stability even in fluctuating markets,
+                  backed by tangible assets.
                 </div>
               </details>
             </div>

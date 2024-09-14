@@ -20,22 +20,25 @@ const Hero = () => {
             transition={{
               duration: 1,
             }}
-            className="tracking-tighter hero-heading md:leading-[7vw] leading-[11vw] text-center font-semibold text-[11vw] md:text-[7vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+            className="tracking-tighter hero-heading md:leading-[11vw] leading-[15vw] text-center font-semibold text-[15vw] md:text-[11vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
           >
-            USDL Equals <br />
-            One Square Foot
+            $USDL
+            <br />
             {/* <p className="md:text-[12vw] text-[17vw] blinking-text mb-[30px]">
               USDL
             </p> */}
           </motion.h2>
 
+          <motion.h4 className="text-white tracking-tighter md:leading-[2.5vw] leading-[5vw] text-center font-semibold text-[5vw] md:text-[2.5vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
+            1 USDL = 1 US Sq Foot
+          </motion.h4>
+
           <div className="hero-bottom bg-[#101b18] md:mx-[11vw] mx-[5vw]  md:px-[3vw] px-[5vw]  md:py-[2vw] py-[4vw] rounded-xl md:mt-[50px] mt-[20px]">
             <p className="text-gray-300 mb-[20px] text-center text-[16px] font-Poppins">
-              USDL (United States Deeds to Land) is a digital currency designed
-              to offer stability and growth by backing its value with real
-              estate. As the world transitions into an era of artificial general
-              intelligence, traditional financial systems may face unprecedented
-              challenges.
+              In a rapidly evolving world, USDL anchors your wealth in the most
+              tangible, finite asset—land. With each USDL token, you own a piece
+              of the United States, grounded in real value, immune to the
+              volatility of artificial general intelligence (AGI) and beyond.
             </p>
             <div className="text-center">
               <Link to="/exploreland">

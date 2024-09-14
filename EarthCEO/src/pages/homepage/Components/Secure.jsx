@@ -15,7 +15,7 @@ const Secure = () => {
             <div className="mx-auto max-w-5xl px-6 lg:px-8">
               <dl className="grid sm:grid-cols-3 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
                 <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                  <dt className="md:text-base text-[16px] leading-7 text-gray-200">
+                  <dt className="md:text-base text-[16px] leading-7 text-gray-200 font-Poppins">
                     USDL is backed by real land
                   </dt>
                   <dd className="font-Poppins mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
@@ -23,7 +23,7 @@ const Secure = () => {
                   </dd>
                 </div>
                 <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                  <dt className="md:text-base text-[16px] leading-7 text-gray-200">
+                  <dt className="md:text-base text-[16px] leading-7 text-gray-200 font-Poppins">
                     Land remains a valuable resources
                   </dt>
                   <dd className="font-Poppins mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
@@ -31,7 +31,7 @@ const Secure = () => {
                   </dd>
                 </div>
                 <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                  <dt className="md:text-base text-[16px] leading-7 text-gray-200">
+                  <dt className="md:text-base text-[16px] leading-7 text-gray-200 font-Poppins">
                     USDL tokens can be easily traded
                   </dt>
                   <dd className="font-Poppins mb-[-10px] order-first text-3xl font-semibold tracking-tight text-[#B9DB63] sm:text-3xl">
