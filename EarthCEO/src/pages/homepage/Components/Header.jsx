@@ -15,8 +15,8 @@ const Header = () => {
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl border-b-[0.3px] border-[#1a1a1a] pb-4">
             <Link to="/">
               <a className="flex items-center">
-                <h2 className="mr-3 h-6 sm:h-9 text-white font-Poppins font-bold">
-                  GROUNDED
+                <h2 className="mr-3 h-6 sm:h-9 font-Poppins md:text-[1.5vw] text-[8vw] text-[#B6DB64] font-semibold">
+                  Grounded
                 </h2>
               </a>
             </Link>
@@ -88,9 +88,11 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="bg-black hover:bg-[#1d1d1d] px-4 py-2 rounded-[30px] transition ease-in-out duration-300">
-                  <a className="font-Poppins block py-2 pr-4 pl-3 text-gray-300 hover:text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                    About USDL
-                  </a>
+                  <Link to="/aboutpage">
+                    <a className="font-Poppins block py-2 pr-4 pl-3 text-gray-300 hover:text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                      About USDL
+                    </a>
+                  </Link>
                 </li>
                 <li className="bg-black hover:bg-[#1d1d1d] px-4 py-2 rounded-[30px] transition ease-in-out duration-300">
                   <a
@@ -102,12 +104,11 @@ const Header = () => {
                 </li>
 
                 <li className="bg-black hover:bg-[#1d1d1d] px-4 py-2 rounded-[30px] transition ease-in-out duration-300">
-                  <a
-                    href="#"
-                    className="font-Poppins block py-2 pr-4 pl-3 text-gray-300 hover:text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >
-                    Contact
-                  </a>
+                  <Link to="/contactpage">
+                    <a className="font-Poppins block py-2 pr-4 pl-3 text-gray-300 hover:text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                      Contact
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </div>

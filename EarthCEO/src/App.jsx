@@ -2,9 +2,10 @@ import { useState } from "react";
 import Homepage from "./pages/homepage/Homepage";
 import { useScroll, motion, useSpring, useTransform } from "framer-motion";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import AboutPage from "./pages/aboutpage/AboutPage";
 import "./App.css";
 import ExploreLand from "./pages/exploreland/ExploreLand";
+import Contact from "./pages/contactpage/Contact";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -37,6 +38,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/exploreland" element={<ExploreLand />} />
+          <Route path="/aboutpage" element={<AboutPage />} />
+          <Route path="/contactpage" element={<Contact />} />
         </Routes>
       </Router>
     </>

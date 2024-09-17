@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import USMAP from "../../../assets/USMAP.png";
 
 const Hero = () => {
   return (
@@ -28,6 +29,26 @@ const Hero = () => {
               USDL
             </p> */}
           </motion.h2>
+
+          {/* <div className="relative">
+            <img
+              className="w-[50vw] z-10 mx-auto border-2 border-white"
+              src={USMAP}
+              alt="USMAP"
+            />
+            <motion.h2
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+              }}
+              transition={{
+                duration: 1,
+              }}
+              className="left-[36%] top-[30%] absolute z-20 tracking-tighter hero-heading md:leading-[11vw] leading-[15vw] text-center font-semibold text-[15vw] md:text-[9vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+            >
+              $USDL
+            </motion.h2>
+          </div> */}
 
           <motion.h4 className="text-white tracking-tighter md:leading-[2.5vw] leading-[5vw] text-center font-semibold text-[5vw] md:text-[2.5vw] font-Poppins block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
             1 USDL = 1 US Sq Foot
