@@ -4,11 +4,43 @@ import FinalCall from "../homepage/Components/FinalCall";
 import Footer from "../homepage/Components/Footer";
 
 const Contact = () => {
-  const [checked, setChecked] = useState(false);
-
-  const handleChange = () => {
-    setChecked(!checked);
+  const [userData, setUserData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+  let name, value;
+  const dataUpdate = (event) => {
+    name = event.target.name;
+    value = event.target.value;
+    setUserData({ ...userData, [name]: value });
   };
+
+  const submitData = async (event) => {
+    event.preventDefault();
+    const [firstName, lastName, email, message] = userData;
+    const res = fetch(
+      "https://grounded-to-default-rtdb.firebaseio.com/userData.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          message,
+        }),
+      }
+    );
+
+    if (res) {
+      alert("Yes");
+    }
+  };
+
   return (
     <>
       <Header />
@@ -36,8 +68,11 @@ const Contact = () => {
                 <input
                   type="text"
                   className=" mt-2 bg-transparent mb-4 block h-9 w-full rounded-md border border-solid border-[#A0DA6E] px-3 py-6 text-sm text-white"
-                  placeholder=""
-                  required=""
+                  placeholder="William"
+                  required
+                  name="firstName"
+                  onChange={dataUpdate}
+                  value={userData.firstName}
                 />
               </div>
               <div>
@@ -50,8 +85,11 @@ const Contact = () => {
                 <input
                   type="text"
                   className="mt-2 bg-transparent mb-4 block h-9 w-full rounded-md border border-solid border-[#A0DA6E] px-3 py-6 text-sm text-white"
-                  placeholder=""
-                  required=""
+                  placeholder="Jack"
+                  required
+                  name="lastName"
+                  onChange={dataUpdate}
+                  value={userData.lastName}
                 />
               </div>
             </div>
@@ -63,6 +101,11 @@ const Contact = () => {
               <input
                 type="text"
                 className="mt-2 bg-transparent mb-4 block h-9 w-full rounded-md border border-solid border-[#A0DA6E] px-3 py-6 text-sm text-white"
+                placeholder="william@gmail.com"
+                required
+                name="email"
+                onChange={dataUpdate}
+                value={userData.email}
               />
             </div>
             <div className="mb-5 md:mb-6 lg:mb-8">
@@ -70,9 +113,11 @@ const Contact = () => {
                 Message
               </label>
               <textarea
-                placeholder=""
+                placeholder="Your Message"
                 maxLength="5000"
-                name="field"
+                name="message"
+                onChange={dataUpdate}
+                value={userData.message}
                 className="mt-2 bg-transparent mb-2.5 block h-auto min-h-44 w-full rounded-md border border-solid border-[#A0DA6E] px-3 py-2 text-sm text-white"
               ></textarea>
             </div>
