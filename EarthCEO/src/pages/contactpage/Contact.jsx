@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Header from "../homepage/Components/Header";
 import FinalCall from "../homepage/Components/FinalCall";
 import Footer from "../homepage/Components/Footer";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
+  const notify = () => toast.success("Successfully toasted!");
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
@@ -19,7 +21,7 @@ const Contact = () => {
 
   const submitData = async (event) => {
     event.preventDefault();
-    const [firstName, lastName, email, message] = userData;
+    const { firstName, lastName, email, message } = userData;
     const res = fetch(
       "https://grounded-to-default-rtdb.firebaseio.com/userData.json",
       {
@@ -36,14 +38,28 @@ const Contact = () => {
       }
     );
 
-    if (res) {
-      alert("Yes");
+    if (firstName && lastName && email && message) {
+      if (res) {
+        setUserData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          message: "",
+        });
+        toast.success("Thank you! Your message has been received.");
+      } else {
+        // Handle error case
+        toast.error("Failed to submit data. Please try again.");
+      }
+    } else {
+      toast.error("Please Fill The Data");
     }
   };
 
   return (
     <>
       <Header />
+      <Toaster /> {/* Render ToastContainer at the top */}
       <section>
         {/* Container */}
         <div className="mx-auto max-w-7xl px-5 py-16 text-center md:px-10 md:py-20">
@@ -122,16 +138,16 @@ const Contact = () => {
               ></textarea>
             </div>
             <div className="flex justify-center">
-              <input
-                type="submit"
-                value="Send Message"
+              <button
+                onClick={submitData}
                 className="cursor-pointer bg-[#C0DC61] text-gray-700 font-Poppins hover:text-gray-300 dark:text-white hover:bg-[#1d1d1d] focus:ring-4 focus:ring-gray-300 font-medium rounded-[20px] text-lg px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 duration-300 ease-in-out transition"
-              />
+              >
+                Send Message
+              </button>
             </div>
           </form>
         </div>
       </section>
-
       <FinalCall />
       <Footer />
     </>

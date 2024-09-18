@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex md:flex-nowrap flex-wrap justify-between ">
             <div className="footer-left md:basis-[55%] basis-[100%]">
               <div className="flex items-center md:flex-nowrap flex-wrap">
-                <h2 className="pr-[20px] md:basis-[30%] basis-[100%] font-Poppins md:text-[1.5vw] text-[8vw] text-[#B6DB64] font-semibold mt-[8px] md:text-left text-center">
+                <h2 className="pr-[20px] md:basis-[30%] basis-[100%] font-Poppins md:text-[1.5vw] text-[5vw] text-[#B6DB64] font-semibold mt-[8px] md:text-left text-center">
                   Grounded
                 </h2>
                 <p className="text-gray-300 md:text-left text-center text-[16px] font-Poppins md:pl-[40px] md:border-l-2 border-white">

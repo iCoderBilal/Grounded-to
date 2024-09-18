@@ -15,7 +15,7 @@ const Header = () => {
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl border-b-[0.3px] border-[#1a1a1a] pb-4">
             <Link to="/">
               <a className="flex items-center">
-                <h2 className="mr-3 h-6 sm:h-9 font-Poppins md:text-[1.5vw] text-[8vw] text-[#B6DB64] font-semibold">
+                <h2 className="mr-3 h-6 sm:h-9 font-Poppins md:text-[1.5vw] text-[5vw] text-[#B6DB64] font-semibold">
                   Grounded
                 </h2>
               </a>
