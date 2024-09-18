@@ -17,7 +17,7 @@ const AboutMain = () => (
         </h2>
 
         <div className="about-card-main md:py-[70px] py-[20px] flex flex-col gap-[15px]">
-          <div className="about-card md:w-[35vw] w-[100%] bg-black px-8 py-12 rounded-[10px]">
+          <div className="about-card md:w-[35vw] w-[100%] bg-black md:px-8 px-4 py-12 rounded-[10px]">
             <div className="card-img p-[12px] bg-black rounded-[50%] w-[fit-content]">
               {/* <img src={cardImg} className="w-[60px]" /> */}
             </div>
@@ -36,7 +36,7 @@ const AboutMain = () => (
 
           {/* ________________________________________ */}
 
-          <div className="about-card md:w-[35vw] w-[100%] bg-black px-8 py-12 rounded-[10px] self-end md:mt-[-120px]">
+          <div className="about-card md:w-[35vw] w-[100%] bg-black md:px-8 px-4 py-12 rounded-[10px] self-end md:mt-[-120px]">
             <div className="card-img p-[12px] bg-black rounded-[50%] w-[fit-content]">
               {/* <img src={cardImg} className="w-[60px]" /> */}
             </div>
@@ -55,7 +55,7 @@ const AboutMain = () => (
 
           {/* ____________________________________ */}
 
-          <div className="about-card md:w-[35vw] w-[100%] bg-black px-8 py-12 rounded-[10px] md:mt-[-120px]">
+          <div className="about-card md:w-[35vw] w-[100%] bg-black md:px-8 px-4 py-12 rounded-[10px] md:mt-[-120px]">
             <div className="card-img p-[12px] bg-black rounded-[50%] w-[fit-content]">
               {/* <img src={cardImg} className="w-[60px]" /> */}
             </div>
@@ -74,7 +74,7 @@ const AboutMain = () => (
 
           {/* ____________________________________ */}
 
-          <div className="about-card md:w-[35vw] w-[100%] bg-black px-8 py-12 rounded-[10px] self-end md:mt-[-120px]">
+          <div className="about-card md:w-[35vw] w-[100%] bg-black md:px-8 px-4 py-12 rounded-[10px] self-end md:mt-[-120px]">
             <div className="card-img p-[12px] bg-black rounded-[50%] w-[fit-content]">
               {/* <img src={cardImg} className="w-[60px]" /> */}
             </div>
