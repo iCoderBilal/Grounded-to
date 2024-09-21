@@ -10,7 +10,10 @@ const AboutMain = () => (
           className="w-[60px] mx-auto absolute top-[-25px] left-[48%]"
         />
 
-        <h2 className="text-center tracking-tight font-Poppins md:text-[3.2vw] text-[6vw] md:leading-[3.8vw] leading-[6.5vw] text-white font-semibold mb-[30px] md:mt-0 mt-[50px]">
+        <h2
+          data-aos="zoom-out"
+          className="text-center tracking-tight font-Poppins md:text-[3.2vw] text-[6vw] md:leading-[3.8vw] leading-[6.5vw] text-white font-semibold mb-[30px] md:mt-0 mt-[50px]"
+        >
           {" "}
           Our goal is simple to help you stay grounded in an ever-accelerating
           world

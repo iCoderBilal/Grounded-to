@@ -1,4 +1,6 @@
-import { useState } from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Homepage from "./pages/homepage/Homepage";
 import { useScroll, motion, useSpring, useTransform } from "framer-motion";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -17,6 +19,13 @@ function App() {
     [0, 1],
     ["#5F7035", "#BDDC62"]
   );
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
