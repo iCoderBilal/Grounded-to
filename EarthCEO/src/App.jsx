@@ -8,6 +8,7 @@ import AboutPage from "./pages/aboutpage/AboutPage";
 import "./App.css";
 import ExploreLand from "./pages/exploreland/ExploreLand";
 import Contact from "./pages/contactpage/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -44,6 +45,7 @@ function App() {
         }}
       />
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/exploreland" element={<ExploreLand />} />
