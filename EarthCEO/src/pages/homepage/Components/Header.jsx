@@ -13,6 +13,7 @@ const Header = ({ howitworks }) => {
   const scrollToSection = (ref) => {
     if (window.location.pathname === "/") {
       ref.current.scrollIntoView({ behaviour: "smooth", block: "start" });
+      setMobileMenu(!mobileMenu);
     } else {
       navigate("/", { state: { scrollTo: "howitworks" } });
     }
