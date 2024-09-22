@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Hero from "./Components/Hero";
 import "./homepage.css";
 import Secure from "./Components/Secure";
@@ -14,19 +14,29 @@ import stateData from "./usStates.json"; // Ensure this path is correct based on
 import NewMap from "../exploreland/Components/NewMap";
 import FAQ from "./Components/FAQ";
 import { Spotlight } from "../../components/Spotlight";
+import { useLocation } from "react-router-dom";
 
 const Homepage = () => {
+  const howitworks = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo == "howitworks") {
+      howitworks.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [location]);
+
   return (
     <div>
       <Spotlight />
-      <Hero />
+      <Hero howitworks={howitworks} />
 
       {/* <InteractiveMap stateData={stateData} /> */}
       <About />
       {/* <NewMap /> */}
       <Secure />
 
-      <HowItWorks />
+      <HowItWorks howitworks={howitworks} />
       <FAQ />
       <FinalCall />
       <Footer />

@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import USMAP from "../../../assets/USMAP.png";
 import heroImg from "../../../assets/hero-img.jpg";
 
-const Hero = () => {
+const Hero = ({ howitworks }) => {
   return (
     <div className="bg-black min-h-screen overflow-x-hidden ">
       <div className="hero">
-        <Header />
+        <Header howitworks={howitworks} />
       </div>
 
       <div className="flex items-center justify-center w-screen min-h-[90vh]">

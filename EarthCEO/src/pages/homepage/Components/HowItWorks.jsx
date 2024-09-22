@@ -4,10 +4,10 @@ import landImg from "../../../assets/land.png";
 import dollarImg from "../../../assets/dollar.png";
 import growthImg from "../../../assets/growth.png";
 
-const HowItWorks = () => {
+const HowItWorks = ({ howitworks }) => {
   return (
     <div>
-      <div className="how-works">
+      <div className="how-works" ref={howitworks}>
         <div className="how-container px-6 py-[30vw] md:px-[7vw] md:py-[9vw] bg-black text-white">
           <div className="heading">
             <h2 className="text-center section-heading mb-8 md:mb-[30px] tracking-tighter font-Poppins text-3xl md:text-[6vw] text-[9vw] text-white font-semibold md:leading-[6vw] leading-[9vw]">
